@@ -1,0 +1,4 @@
+class Dose < ApplicationRecord
+  belongs_to :cocktail
+  validates :name uniqueness: true
+end
